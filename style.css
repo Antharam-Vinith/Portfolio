@@ -977,13 +977,24 @@ textarea:focus-visible {
     overflow: hidden;
 }
 
+.status-bar {
+    margin-top: 0.55rem;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(2, 6, 23, 0.06);
+    overflow: hidden;
+}
+
 .status-bar span {
     display: block;
     height: 100%;
-    width: var(--w);
+    width: 100%;
     border-radius: 999px;
     background: linear-gradient(90deg, rgba(0,164,204,1), rgba(140,58,255,0.95));
+    transform: scaleX(var(--w, 1));
+    transform-origin: left;
 }
+
 
 /* Contact hints */
 .contact-hints {
